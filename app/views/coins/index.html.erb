@@ -2,9 +2,10 @@
 
 <h1>Coins</h1>
 
-<table>
+<table style='border:1px solid #e9e9e9;'>
   <thead>
     <tr>
+      <th>Id</th>
       <th>Description</th>
       <th>Acronym</th>
       <th>Url image</th>
@@ -15,12 +16,14 @@
   <tbody>
     <% @coins.each do |coin| %>
       <tr>
+        <td><%= coin.id %></td>
         <td><%= coin.description %></td>
         <td><%= coin.acronym %></td>
-        <td><%= coin.url_image %></td>
-        <td><%= link_to 'Show', coin %></td>
-        <td><%= link_to 'Edit', edit_coin_path(coin) %></td>
-        <td><%= link_to 'Destroy', coin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!-- td><image src='<%= coin.url_image %>' height='20'></td //-->
+        <td><%= image_tag(coin.url_image, width:25)%></td>
+        <td><%= link_to('Show', coin) %></td>
+        <td><%= link_to('Edit', edit_coin_path(coin)) %></td>
+        <td><%= link_to('Destroy', coin, method: :delete, data: { confirm: 'Are you sure?' }) %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +31,4 @@
 
 <br>
 
-<%= link_to 'New Coin', new_coin_path %>
+<%= link_to('New Coin', new_coin_path) %>
