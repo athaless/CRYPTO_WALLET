@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# To RUN
+
+* bundle
+* rails db:create
+* rails db:migrate
+* rails server
+* http://localhost:3000/coins
