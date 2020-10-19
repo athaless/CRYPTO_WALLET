@@ -6,4 +6,8 @@ module ApplicationHelper
     def nome_aplicacao
         "CRYPTO WALLET APP"
     end
+
+    def ambiente_rails
+        Rails.env
+    end
 end
