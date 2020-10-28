@@ -1,21 +1,8 @@
 <h1>Welcome... </h1>
 <%=nome_aplicacao%>
-<ul>
-    <!--
-    <li>
-        <a href='/coins' style='cursor:pointer;'>Manage Coins</a>
-    </li>
-    <li>
-        <%=link_to('Manage Coins','/coins')%>
-    </li>
-    //-->
-    <li>
-        <%=link_to('Manage Coins',coins_path)%>
-    </li>
-</ul>
+
+<%= render "menu" %>
 
 <hr>
-    <p><%=@curso%> - <%=data_br(Date.today)%> | <strong><%=ambiente_rails%></strong> | ... and I'm just studying! (<%=@nome%>)</p>
+    <p><%=@curso%> - <%=data_br(Date.today)%> | <strong><%=ambiente_rails%></strong> | ... studying! (<%=@nome%>)</p>
 <hr>
-
-
