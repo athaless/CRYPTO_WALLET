@@ -8,7 +8,7 @@ The course was focused on programming CRUD with RubyOnRails (A simple CRUD to ma
   <tr>
     <td><img src="./_/CRYPTO_WALLET_image1.jpg"></td>
     <td><img src="./_/CRYPTO_WALLET_image2.jpg"></td>
-    <td><img src="./_/CRYPTO_WALLET_image2.jpg"></td>
+    <td><img src="./_/CRYPTO_WALLET_image3.jpg"></td>
     <td></td>
   </tr>
 </table>
